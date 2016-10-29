@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Amy Jacobs</title>
+    <link href="normalize.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <div class="content-container">
+	  <h3>Amy's portfolio. </h3>
+	  <img class="mySlides" src="amy.jpg">
+      <img class="mySlides" src="image.jpg">
+	  <img class="mySlides" src="ajg.jpg">
+	  <img class="mySlides" src="amyg.jpg">
+
+	  <a class="w3-btn-floating w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
+	  <a class="w3-btn-floating w3-display-right" onclick="plusDivs(+1)">&#10095;</a>
+	  <p>My name is Amy Jacobs.I'm a 15 year old girl from Stellenbosch.</p>
+	  <h2>My interest:</h2>
+	  <p>Hockey</p>
+	  <img src="hockeyy.jpg" class="pic">
+	  <p>Coding</P>
+	  <img src="ajcode.jpg"class="code">
+	  <p>Reading</p>
+	  <img src="ajreading.jpg"class="read">
+	  <p>Dancing</p>
+	  <img src="ajdance.jpg"class="dance">
+	  <h3>My main subjects:</h3>
+	  <p>Maths</p>
+	  <p>Acounting</p>
+	  <p>Economics</p>
+	  <p>Business</p>
+	  <h2>Achievements:</h2>
+	  <p>Hockey player of the year(2015)</p>
+	  <p>Best student in history(2015)</p>
+	  <p>Best student in economics (2016)</p>
+	  <h2>Basic info:</h2>
+	  <p>  I attend Cloestesville high.
+	  I play hockey for the first team at my school.My favourite subjects is Maths and Accounting.</p>
+	  <h3> Future goals: </h3>
+	  <p>Firstly I want to finish school with good result and go and study .
+	  I want to start my own company and show people that hard work pays of at the end .
+	  I also want to be a rolemodel for the generations to come. 
+	  <h3> Contact details:</h3>
+	  <p>Email:jacobsamy56@gmail.com</p>
+	  <h3> FAVOURITE MUSIC VIDEO: </h3>
+	  <iframe width="531" height="315" src="https://www.youtube.com/embed/PT2_F-1esPk" frameborder="0" allowfullscreen></iframe>
+	</div>
+</body>
+	<script>
+	var slideIndex = 1;
+	showDivs(slideIndex);
+
+	function plusDivs(n) {
+		showDivs(slideIndex += n);
+	}
+
+	function showDivs(n) {
+		var i;
+		var x = document.getElementsByClassName("mySlides");
+		if (n > x.length) {slideIndex = 1} 
+		if (n < 1) {slideIndex = x.length} ;
+		for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none"; 
+		}
+		x[slideIndex-1].style.display = "block"; 
+	}
+	
+	setInterval(function(){ plusDivs(+1) }, 3000);
+	</script>
+</html>

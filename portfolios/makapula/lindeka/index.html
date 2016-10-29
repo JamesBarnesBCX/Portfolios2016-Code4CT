@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>lindeka pretty mchani</title>
+  <link href="normalize.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Abhaya+Libre:500" rel="stylesheet">
+</head>
+<body>
+<div class="content-container">
+  <h1> Princess Lindeka's Portfolio</h1>
+  <p class="myPara">My name is Lindeka Mchani. I am 16 years old staying in Stellenbosch, I am coding in Makupula secondary.</p>
+  <img class="mySlides" src="lindekam.jpg">
+  <img class="mySlides" src="prettylindeka.jpg">
+  <img class="mySlides" src="lee.jpg">
+  <img class="mySlides" src="lindy.jpg">
+  <img class="mySlides" src="amy.jpg">
+  <img class="mySlides" src="my pic.jpg">
+  <img class="mySlides" src="makups.jpg">
+  <img class="mySlides" src="beautiful.jpg">
+  <img class="mySlides" src="smile.jpg">
+  <img class="mySlides" src="myself.jpg">
+  <img class="mySlides" src="hat.jpg">
+  <img class="mySlides" src="lindie.jpg">
+  
+  <h2>Basic Info</h2>
+  <p>I am shy person with obidience,love,caring,faith,hope,sweeetness and intellegence.</p>
+  <p>I like working with others as teamwork,united with the good behaviour towards other people.</p>
+  <p>I am young coder,coding in Makupula secondary school. My favourite subjects are Maths,Accounting,Economics and Business studies. I like helping others and I enjoy Coding alot.</p>
+<h2>My interests</h2>
+<p> I enjoy reading the bible, reading story books, writing poems, singing, learning and coding.</p>
+
+  <h2>Achievements</h2>
+  <p>Top learner in Grade 8 2014<br>Top learner in Grade 9 2015<br>Completion of code4ct 2016</p>
+  <h2>Media</h2>
+  <a href="mailto:mchanilindeka99@gmail.com" class="btn">Email</a>
+  <a href="https://www.facebook.com/lindeka.mchani" class="btn">Facebook</a>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/KA3k0CzKfUE" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<script>
+
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1} 
+    x[slideIndex-1].style.display = "block"; 
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+
+</script>
+
+</body>
+</html>

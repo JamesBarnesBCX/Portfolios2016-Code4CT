@@ -1,0 +1,30 @@
+h1 {
+  color: white;
+}
+#prettyfont{
+  font-family: sans-serif;
+}
+ul > li {
+  font-size: 40px;
+}
+ .prettyfont, .importantinfo {
+   color: pink;
+   background-color: grey
+ }
+
+ .content-container{
+   width: 50%;
+   margin-left: 20%;
+   margin-left: 20%;
+   padding: 5%;
+   border: 0.6em #F0E100 solid;
+   
+ }
+body {
+    background-color: #FE64A3;
+}
+
+img {
+	border: 10px solid #44FFD2;
+	max-width: 100%;
+}

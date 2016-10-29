@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Eza Nogcado</title>
+  <link href="normalize.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <header>
+    <nav class="nav-bar">
+      <h3>Eza's Site</h3>
+      <ul>
+        <li><a href="#Home">About</a></li>
+        <li><a href="#subjects">Subjects</a></li>
+		<li><a href="#Me">Me</a></li>
+        <li><a href="#Interests">Interests</a></li>
+        <li><a href="#Code4ct">Code4CT</a></li>
+		<li><a href="#Video">Video</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="content-container">
+    <h1 id="home">❤Eza Nogcado's Portfolio❤</h1>
+	
+	<p>Age:15</p>
+	  
+	  <p>Occupation:Student</p>
+	  
+	  
+	  <p>City:Cape-Town</p>
+	  
+
+    <h1>And this is me😍</h1>
+	<img src="mna.jpg"style="width:500px;height:500px;">
+    
+	  
+	  <div id="subjects">
+	  <br><br><br>
+	  <h1>Subjects:</h1>
+	  <ol>
+		  <li>Afrikaans</li>
+		  <li>English</li>
+		  <li>Life Science</li>
+		  <li>Physical Science</li>
+		  <li>Geografie</li>
+		  <li>Lifeorientation</li>
+		  <li>Mathematics</li>
+	  </ol>
+	  </div>
+	  
+
+
+    <div id="😍Me😍">
+	<br><br><br>
+	<h1>Me:</h1>
+    <p> My name is Eza Nogcado.I am a learner at Cloetesville High School.I'm doing grade 10.
+        For my primary school i went to Koelenhof Primary School wich now is known as St.Vincent Primary School.
+        I am that type of person who loves working with other people.I love communicating with people around the world.
+        My dream is to make my community a better place.I want to make a differece in my community.
+        I want to make my family proud by being succesful.
+        Yeah that's me!!!
+		<img src="smile.jpg"style="width:304px;height:228px;">
+
+		
+		</div>
+    </p>
+	
+	<div id="Intersts">
+     <br><br><br>
+    <h1>My interests:</h1>
+    <ol>Coding</ol>
+	<img src="coding.jpg"style="width:304px;height:228px;">
+    <ol>Playing netball</ol>
+	<img src="netbal.jpg"style="width:304px;height:228px;">
+    <ol>Listenig to music</ol>
+	<img src="music.jpg"style="width:304px;height:228px;">
+    <ol>Dancing</ol>
+	<img src="dance.jpg"style="width:304px;height:228px;">
+	<ol>Cooking</ol>
+	<img src="cook.jpg"style="width:304px;height:228px;">
+	</div>
+	
+	<h1 id="Code4ct">Here is a little video i would love to share.Something i enjoyed in my life.The Code Camp</h1>
+	<img src="smile again.jpg"style="width:304px;height:228px;">
+
+<iframe width="100%" height="400px" src="https://www.youtube.com/embed/KA3k0CzKfUE" frameborder="0" allowfullscreen></iframe>
+ 
+<h1>My favourite song</h1>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gn5SQUyny20?list=RDgn5SQUyny20" frameborder="0" allowfullscreen></iframe>
+	
+	
+p>Contact details:
+	     Phone number:0834331812
+		 Email:nogcadoeza@gmail.com
+	  </p>
+
+  </div>
+</body>
+<script>
+
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1} 
+    x[slideIndex-1].style.display = "block"; 
+    setTimeout(carousel, 5000); // Change image every 2seconds
+}
+</script>
+
+</html>

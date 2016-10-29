@@ -1,0 +1,86 @@
+<html>
+<head>
+	<title>NTOMBIE'S Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<section class="content-container">
+		 <h1>NTOMBIE'S Portfolio</h1>
+	    <img src="zama.jpg"> 
+		 <img class="mySlides" src="ntura.jpg">
+		<img class="mySlides" src="tree.jpg">
+		<img class="mySlides" src="zaza.jng">
+		<img class="mySlides" src="zam.jng">
+		<img class="mySlides" src="zulu.jpg">
+		
+		 <p class="prettyfont importantinfo">
+		 <ul>
+		<ul>
+		<h1>PERSONAL DETAILS</h1>
+		<ul>
+		  <li>I am Ntombie Zuma I'm 15 years old and I'm in grade 10.</li>
+		  <li>I am in Makupula High School where I studies my career of becoming an Accountant</li>
+		</ul>
+		  <h2>ABOUT ME</h2>
+		 <ul>
+		  <li>I am a good person and I like working with people</li>
+		  <li>I am antentive and intend to be somewhere nice</li>
+		</ul>
+		  <h3>ACHIEVEMENTS</h3>
+		<ul>
+		  <li>In grade 7 I passed my Maths by 98% and got cirtificate</li>
+		  <li>In grade 8 i got 4 prizes
+		</ul>
+		  <h4>INTEREST AND HOBBIES</h4>
+		<ul>
+		  <li>I LOVE COOKING</li>
+		  <li>PLAYING NETBAL</li>
+		  <img src="zuma.jpg" width="400">
+		  <li>WATCHING TELEVION</li>
+		  <li>READING BOOKS</li>
+		  <li>HOLA-HOOPING</li>
+		  <img src="ima.jpg">
+		  <li>CODING</li>
+		  <img src="java.jpg">
+		  
+		</ul>
+		  <h5>SUBJECTS</h5>
+		<ul>
+		  <li>Business Studies </li>
+		  <li>Accounting</li>
+		  <li>Home Language(Xhosa)</li>
+		  <li>Ecconomics</li>
+		  <li>Mathematics</li>
+		  <li>Life Orientation</li>
+		  <li>English</li>
+		</ul>
+		<h6>SOCIAL MEDIA<h6>  
+		<ul>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/R83BwYqCfG4" frameborder="0" allowfullscreen></iframe>
+		<li>Facebook</li>
+		</ul>
+	</section>
+	
+	</script>
+	var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1} 
+    if (n < 1) {slideIndex = x.length} ;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; 
+    }
+      x[slideIndex-1].style.display = "block"; 
+    }
+    setInterval(function(){plusDivs(+1)}, 2000);
+    </div>
+</body>
+</html>

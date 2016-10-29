@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <head>
+  <title>Avuyile Nduku</title>
+  <Link href="normalize.css" rel="stylesheet">
+  <Link href="style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, intial-scale=1">
+</head>
+
+
+
+<head>
+<body>
+<div class="content-container">
+
+ <h1>Avuyile's Portfolio</h1> 
+<img class="mySlides" src="lol.jpg">
+<img class="mySlides" src="mo.jpg">
+<img class="mySlides" src="sos.jpg">
+<img class="mySlides" src="vuvu.jpg">
+<img class="mySlides" src="min.jpg">
+
+<p class="prettyfont importantInfo">Has done some interesting things</p>
+<ul>About myself</ul>
+<li>My name is Avuyile and my surname is Nduku.I am 16 years old.I'm doing grade 10 at  Makupula high school.
+<li>I like to take people's needs as an very impotarnt issue,I work hard on that issue and try to find solution for it.</li>
+<li>I like to make things that can be helpful to the people.</li>
+<li>I am that kind of a person who is telling her self that fun is not going anywhere,Firstly I do things that are important,then i can have fun after.</li>
+<li>I love working with people a lot,I love to do a team work.I'm shy sometimes.But if I told myself that I'm going to do something I do it without being shy. </li>
+
+<ul>Personal details</ul> 
+<li>age: 16years old</li>
+<li>I live in Cape Town</li>
+<li> I'm still studying</li>
+
+<ul>My Interest</ul>
+<li>Coding.</li>
+<li>Chatting.</li>
+<li>Cooking.</li>
+<li>Listening to music.</li>
+<li>watch videos.</li>
+
+<ul>Achievements</ul>
+<li>On 2014 I received a certificate of Math</li>
+<li>Then on 2015 I received a certificate of Economics</li>
+<li>And on 2016 I receive a certificate of Coding</li>
+
+<ul>Subject</ul>
+<li>Maths</li>
+<li>Business studies</li>
+<li>Economics</li>
+<li>Accouting</li>
+
+<ul>Contact Details</ul>
+  <li>Gmail: A.nduku@makupulaschool.org.za</li>
+  <li>Facebook: Nduku Avuyile</li>
+  <li>Instagram: Nduku Avuyile</li>
+  
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KA3k0CzKfUE" frameborder="0" allowfullscreen></iframe>
+<ol></ol>
+</div>
+</body>
+<script>
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1} 
+    x[slideIndex-1].style.display = "block"; 
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name ="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title> SONIQUE MANUEL </title>
+    <link href="normalize.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav class="nav-bar">
+      <h3>Sonique's site</h3>
+  </header>
+<div class="content-container">
+ <center> <h1>♡MY PORTFOLIO♡</h1></center>
+  
+  <p>My name is Sonique Manuel.I'm 16years old and I love spending time with my friends and family</p>
+  
+<center><img class="mySlides" src="sonique_m.jpg" width="300px"></center>
+<center><img class="mySlides" src="sonique1.jpg" width="300px"></center>
+<center><img class="mySlides" src="pic.jpg" width="300px"></center>
+<center><img class="mySlides" src="sonique1.jpg" width="300px"></center>
+<center><img class="mySlides" src="manueltjie.jpg" width="300px"></center>
+<center><img class="mySlides" src="soniquem.jpg" width="300px"></center>
+<center><img class="mySlides" src="146.JPG" width="300px"></center>
+  
+   <center> <h3>INTEREST</h3></center>
+   <ul>
+   <center> Sleeping</center>
+    <center>Listen to music</center>
+   <center> Spend time with my bestfriend</center>
+  </ul>
+ 
+  <center><h3>HOBBIES</h3></center>
+  <ul>
+ <center> Hiking</center>
+  <center>TableTennis</center>
+  <center>Chess</center>
+  <center>Swimming</center>
+  </ul>
+  
+  <center><h3>ACHIEVEMENTS</h3></center>
+  <ul>
+  <center> I'm part of a drama group</center>
+  <center>I'm doing coding</center>
+  
+  
+ <center> <h3>SKILLS</h3></center>
+  <ul>
+  <center>First Aid </center>
+  <center>Microsoft</center>
+  <center>Cooking</center>
+  </ul>
+  
+<center><h4>SUBJECTS</h4></center>
+<ul>
+ <center> Mathematics</center>
+ <center>   Physics</center>
+  <center>  Life Science</center>
+    <center> CAT</center>
+</ul>
+
+	 <link rel="stylesheet" href="style.css" />
+  <center> <button class="btn" onclick="toggleAbout()"><h2>ABOUT MYSELF</h2> </button></center>
+	<ul id="aboutList" style="display:none">
+	   <li> <p>I'm a very kind type of person.</p></li>
+	   <li> <p>  I love making new friends and spend some time with them.  </p></li>
+	   <li> <p>   What I do most of my time I go to school and then sleep.  </p></li>
+	   <li> <p>   I like to communicate with people even if I don't know them.</p></li>
+	</ul>
+
+	
+	<footer>
+	<section class="left-footer">
+		<h5>CONTACT DETAILS</h5>
+		<img src="flower.jpeg" width="50" id="flower">
+	</section>
+	<section class="right-footer">
+		<center><a href="https://www.facebook.com/soniquenicky.manuel">facebook</a></center>
+		<ul>
+		 <center>Email : sonique.manuel12@gmail.com</center>
+		</ul>
+	</section>
+	</footer>
+	
+
+  
+  <center><iframe width="460" height="315" src="https://www.youtube.com/embed/PT2_F-1esPk" frameborder="0" allowfullscreen></iframe></center>
+</div>
+<script type="text/javascript" src="autoslider.js"></script>
+<script>
+
+	var visible = 0;
+
+	function showAbout() {
+	
+		console.log("About displayed");
+		var list = document.getElementById("aboutList");
+		list.style.display = "inline";
+	}
+	
+	function hideAbout() {
+	
+		console.log("About hidden");
+		var list = document.getElementById("aboutList");
+		list.style.display = "none";
+	}
+	
+	function toggleAbout(){
+		if(visible){
+			hideAbout();
+			visible = 0;
+			
+		}else{
+			showAbout();
+			visible = 1;
+		}	
+	}
+
+
+
+</script>
+</body>
+</html>

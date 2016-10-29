@@ -1,0 +1,62 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>Sonique Astrid Constable</title>
+  <link href="normalize.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+      <nav class="nav-bar">
+        <h3>S.A.Constable</h3>
+        <img src="flower.jpg" width="10%" id="flower">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="page2.html">Expertise</a></li>
+			<li><a href="#">About</a></li>
+		</ul>
+       </nav>
+    </header>
+<div class="content-container">
+  <h1>About S.A. Constable</h1>
+   <img class="mySlides" src="love.gif" width="40%">
+   <img class="mySlides" src="food.gif" width="40%">
+   <img class="mySlides" src="smile.gif" width="40%">
+   <img class="mySlides" src="dance.gif" width="40%">
+   <img class="mySlides" src="giphy.gif" width="40%">
+   <img class="mySlides" src="149.JPG" width="50%">
+   <article>
+   <p>I am a very hardworking person who loves communicating with people and making them laugh. I believe in doing my utmost best in any task that I have to do. I love helping others and doing good in my community.As shown in my pictures , I love food ,smiling and just having fun.</p>
+   </article>
+   <p>Here is a lovely song by one of my favourite acappela group, The Soil. Enjoy</p>
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/8UJEH4GbtQk" frameborder="0" allowfullscreen></iframe>
+   </div>
+    <footer>
+  <h3>Contact Details</h3>
+    <img src="flower.jpg" width="10%" id="flower">
+	<a href=https://www.facebook.com/sonique.constable><img src="facebook.png" width="4%" id="fb"></a>
+      <ul>
+        <li>email address: soniqueconstable@gmail.com</li>
+		
+      </ul>
+    </footer>
+	<script>
+	
+	var slideIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1} 
+    x[slideIndex-1].style.display = "block"; 
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}</script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Sange sidinile</title>
+    <link href="normalize.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="content-container">
+  <h1>Sange's portfolio</h1>
+	<img class="mySlides" src="m.jpg">
+	<img class="mySlides" src="sange3.jpg">
+	<img class="mySlides" src="sange2.jpg">
+	<img class="mySlides" src="sange1.jpg">
+	<img class="mySlides" src="mna.jpg">
+	<img class="mySlides" src="aya.jpg">
+	<img class="mySlides" src="yes.jpg">
+	<img class="mySlides" src="sange.jpg">
+	<img class="mySlides" src="sane.jpg">
+	<img class="mySlides" src="lol.jpg">
+	<img class="mySlides" src="wow.jpg">
+	<img class="mySlides" src="zama.jpg">
+	<img class="mySlides" src="n.jpg">
+	<img class="mySlides" src="zamo.jpg">
+	<img class="mySlides" src="_n.jpg">
+	
+  <p class="prettyfont importantinfo"></p>
+  
+	<ul> 
+		<h1>Personal Detail</h1>
+		<li>Name:Sange Ncebakazi</li>
+		<li>Surname:Sidinile</li>
+		<li>Grade:10b</li>
+		<li>School:Makupula Secondary School</li>
+		<li>Age:16 years old</li>
+		<li>Gender:Female</li>
+	</ul>
+	
+	<h1>Subject</h1>
+  <ul>
+	<li>Business Studies</li>
+	<li>Economics</li>
+	<li>Computer Aplication Technology</li>	
+	<li>English</li>
+	<li>Isixhosa</li>
+	<li>Mathematics</li>
+	<li>Life Orantation</li>
+	</ul>
+	
+	<h1>About Me</h1>
+	<ul>
+	  <li>I am kind person </li>
+	  <li>I am talkative</li>
+	  <li>I like to communicate with other people</li>
+	  <li>I like to smile</li>
+	  <li>I love Hoolapoping</li>
+	</ul>
+	  
+	  <img src="img.jpg" width="400">
+	 <h1>My Achievements</h1>
+	 <ul>
+		<li>In grade7 I archieve english and xhosa certificate</li>
+		<li>And on other year i got a certificate for an after school programme that was nitro</li>
+		<li>This year i got a spelt from peer educator</li>
+	  </ul>
+	  
+	<h1>My Interest and Hobbies</h1>
+	<ul>
+		<li>Reading Books</li>
+		<li>Watching Televison</li>
+		<li>I love cooding</li>
+		<li>Cooking</li>
+		</ul>
+	<img src="african salad.jpg" width="500">
+	
+	  <h1>My best song</h1>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/qWG2D1-JSMA" frameborder="0" allowfullscreen></iframe>
+	
+	
+	</div>
+	<script>
+		var slideIndex = 1;
+		showDivs(slideIndex);
+
+		function plusDivs(n) {
+			showDivs(slideIndex += n);
+		}
+
+		function showDivs(n) {
+			var i;
+			var x = document.getElementsByClassName("mySlides");
+			if (n > x.length) {slideIndex = 1} 
+			if (n < 1) {slideIndex = x.length} ;
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none"; 
+			}
+			x[slideIndex-1].style.display = "block"; 
+		}
+		
+		setInterval(function(){plusDivs(+1)}, 2000);
+	</script>
+</body>

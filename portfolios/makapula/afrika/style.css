@@ -1,0 +1,32 @@
+h1 {
+  color:#DC136C;
+}
+#prettyfont{
+  font-family: sans-serif;
+}
+li {
+  font-size: 18px;
+  list-style-type: none;
+}
+ .prettyfont, .importantinfo {
+   color:purple;
+ }
+body{
+background-color:#EF767A; 
+}
+
+ .content-container{
+ text-align: center;
+   width: 70%;
+   margin-left: 15%;
+   padding: 2%;
+   border: solid;
+   background-color: #EE767A;
+ }
+ 
+ .hobbies {
+ }
+
+ prettyfont{
+ fontsize:35px;
+ }
