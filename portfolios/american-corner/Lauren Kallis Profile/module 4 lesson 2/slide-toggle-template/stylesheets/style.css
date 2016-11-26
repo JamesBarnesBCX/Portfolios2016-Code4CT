@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+}
+
+article {
+  position: relative;
+}
+
+.mobile-container {
+  max-width: 350px;
+  margin: 0 auto;
+  padding: 2% 2% 4% 2%;
+  background-color: #efefef;
+}
+
+.article-content {
+  overflow: hidden;
+  max-height: 300px;
+  margin-bottom: 5%;
+  padding: 2%;
+  background-color: #fff;
+  transition: max-height 300ms ease-in-out;
+}
+
+
+.primary-btn {
+  position: absolute;
+  bottom: -30px;
+  right: 0;
+  display: inline-block;
+  border: none;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  outline: none;
+  padding: 2% 4%;
+  color: #fff;
+  background-color: #2E86C1;
+}

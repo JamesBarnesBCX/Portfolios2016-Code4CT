@@ -1,0 +1,47 @@
+
+h1{
+  color:black;
+  font-size:50px;
+  font-family:arial;
+}
+h1{
+  text-align:center;
+}
+h2{
+  color:black;
+  font-size:50px;
+  font-family:arial;
+  margin-top:50px;
+}
+h2{
+  text-align:center;
+}
+
+h3{color:black;
+  font-size:40px
+}
+h3{
+    text-align: center;
+}
+h4{color:black;
+  font-size:40px;
+}
+p{color:black;
+  font-size:30px;
+}
+p{
+text-align: center;
+}
+
+ul{color:black;
+  font-size: 30px;
+}
+body {
+    background: url("image.jpg") center/cover no-repeat;
+    background-repeat: no-repeat;
+    }
+li{ background-color:#F8F8FF;
+  float: left;
+  padding: 20px 40px;
+  margin-left: 50px;
+}

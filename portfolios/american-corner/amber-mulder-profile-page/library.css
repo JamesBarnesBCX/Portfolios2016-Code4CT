@@ -1,0 +1,80 @@
+body{
+  background-color: beige;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+.navv li a{
+  background-color: black;
+  display:block;
+  color: white;
+  text-decoration: none;
+  padding:2em 0 2em 2em;
+  float: left;
+  top:0;
+  width: 8%;
+  height: 15%;
+}
+.navv a:hover {
+    background-color: red;
+}
+.clear-float{
+  display: table;
+  clear: both;
+}
+p{
+  text-align: left;
+  font-family: serif;
+}
+section h1{
+  font-family: "algarian";
+  color: teal;
+  text-align: center;
+}
+.storiess a{
+  background-color: teal;
+  display:block;
+  color: beige;
+  text-decoration: none;
+  padding: 2em 2em 2em 2em;
+  float: left;
+  width: 100%;
+  height: 15%;
+}
+.storiess a:hover{
+  background-color: black;
+}
+h1{
+  text-align: center;
+  font-family: arial black;
+}
+section{
+  background-color: beige;
+  margin: 1em 1em 1em 1em;
+  padding: 0 3em 3em 3em;
+  margin: solid;
+  box-shadow: 1em 2em 3em;
+  box-shadow-:
+}
+.top{
+  width: 100%;
+  height: 15%;
+  background-color: black;
+}
+.active{
+  background-color: teal;
+}
+.storie {
+  transition-duration: 3s;
+  transition-timing-function: linear;
+  max-height: 300px;
+  overflow: hidden;
+}
+.storie.expanded{
+max-height: 3000px;
+}

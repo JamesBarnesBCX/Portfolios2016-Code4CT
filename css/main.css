@@ -289,6 +289,7 @@ html, body {
     margin: 0;
     z-index: -2;
     pointer-events: none;
+    overflow: hidden;
 }
 
 .main-box {
@@ -302,6 +303,8 @@ html, body {
     min-width: 40%;
     max-width: 60%;
     box-shadow: 10px 10px 5px grey;
+    max-height: 95%;
+    overflow-y: auto;
 }
 
 @media (min-width: 768px) {
@@ -384,19 +387,19 @@ label:before {
 }
 
 label[for*='1']:before {
-    content: '\f2c3';
+    content: '\f120';
 }
 
 label[for*='2']:before {
-    content: '\f0c0';
+    content: '\f19d';
 }
 
 label[for*='3']:before {
-    content: '\f19c';
+    content: '\f148';
 }
 
 label[for*='4']:before {
-    content: '\f27b ';
+    content: '\f29c';
 }
 
 label:hover {

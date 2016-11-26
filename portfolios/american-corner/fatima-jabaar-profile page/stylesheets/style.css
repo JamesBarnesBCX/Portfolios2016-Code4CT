@@ -1,0 +1,190 @@
+.heading-style {
+  font-family: 'Arial', sans-serif;
+  color: #e5b63b;
+  text-align: center;
+  font-size: 2em;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 2px #999 solid;
+}
+
+nav {
+  float: right;
+  padding: 0 2em;
+  display: inline-block;
+  width: 50%;
+}
+
+nav li {
+  display: inline-block;
+  padding: 1em;
+  width: 15%;
+  list-style: none;
+}
+
+nav ul li a {
+  padding: 2%;
+  color: #5DADE2;
+}
+
+a:hover {
+  border-bottom: #c2c6c5;
+  color: green;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 40%;
+}
+
+.logo h1 {
+  color: #ed93b4;
+  font-size: 2em;
+  padding: 0 2em;
+}
+
+/* your active style goes here*/
+nav ul li a.active {
+  color: #00e673;
+  border-bottom: #009933;
+  padding: 5%;
+}
+/* your active style goes here*/
+
+
+figure {
+  width: 85.89%;
+  position: absolute;
+  top: 85%;
+  left: 165%;
+  background-image: url(pinklogo.png);
+}
+
+#cute {
+  width: 10%;
+  position: absolute;
+  top: 0.2px;
+  left: 310px;
+}
+
+img {
+  max-width: 100%;;
+}
+
+.profile_pic {
+  width: 80%;
+  height: 80%;
+  border: 2px grey solid;
+  background-color: grey;
+}
+
+#images {
+  float: left;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 3%;
+  margin-bottom: 10%;
+  width: 30%;
+  text-align: center;
+}
+
+#bts {
+  width: 110%;
+}
+
+a {
+  color: grey;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+body {
+  background-color: #dce8dc;
+}
+
+.content-container {
+  display: inline-block;
+  width:780px;
+  margin:5% 5% 5% 5%;
+  padding: 2em;
+  border: 10px;
+  box-shadow:10px 0px 5px 0px #6b9174;
+  background-color: white
+}
+
+footer {
+  position: fixed;
+  right: 0;
+  float: left;
+  text-align: center;
+  width: 27%;
+  bottom: 1px;
+  padding: 0;
+  background-color: pink;
+  margin-bottom: 0.3%;
+  margin-right: 0.3%;
+}
+
+#circle {
+-moz-border-radius: 20%;
+-webkit-border-radius: 20%;
+border-radius: 20%;
+}
+
+footer li {
+  display: inline-block;
+  padding: 0;
+  font-size: 0.89em;
+}
+
+article {
+  text-align: center;
+}
+
+.article-content {
+  overflow: hidden;
+  max-height: 100px;
+  margin-bottom: 5%;
+  padding: 2%;
+  background-color: #fff;
+  transition: max-height 300ms ease-in-out;
+}
+
+.article-content.expanded {
+  max-height: 3000px;
+}
+
+h2 {
+  color: #8a9091;
+  text-align: center;
+}
+
+.clear-float {
+  display: table;
+  clear: both;
+}
+
+@media only all and (min-width: 360px) and (max-width: 1920) {
+   background: url(pinklogo.png) left center no-repeat;
+}
+
+.mobile-container {
+    max-width: 350px;
+    margin-top: 8%;
+  }
+
+#heading_intro {
+  diplay: inline-block;
+{

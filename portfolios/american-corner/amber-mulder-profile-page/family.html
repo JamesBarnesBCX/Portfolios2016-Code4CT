@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Family</title>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+</head>
+
+<body>
+  <ul class="navv">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="family.html">Gallery</a></li>
+  <li><a href="contactme.html">Contact Me</a></li>
+  <li><a href="bio.html">Bio</a></li>
+  <li><a href="blog.html">Blog</a></li>
+  <li><a href="library.html">Library</a></li>
+  </ul>
+<div class="slides">
+ <div class="w3-content" style="max-width:100%; position:relative">
+   <img class="mySlides" src="Springfield-2.jpg">
+   <img class="mySlides" src="Springfield-3.jpg">
+   <img class="mySlides" src="Springfield-4.jpg" >
+   <img class="mySlides" src="Springfield-5.jpg">
+   <img class="mySlides" src="skye.jpg" style="width:100%">
+   <img class="mySlides" src="snow.jpg" style="width:100%">
+   <img class="mySlides" src="mommy.jpg" style="width:100%">
+   <img class="mySlides" src="daddy.jpg" style="width:100%">
+   <img class="mySlides" src="parents.jpg" style="width:100%">
+   <img class="mySlides" src="dance.jpg" style="width:100%">
+   <img class="mySlides" src="tamia.jpg" style="width:100%">
+   <img class="mySlides" src="ethan.jpg" style="width:100%">
+   <img class="mySlides" src="charl.jpg.jpg" style="width:100%">
+   <img class="mySlides" src="confirmation.jpg" style="width:100%">
+   <img class="mySlides" src="grade6.jpeg" style="width:100%">
+   <img class="mySlides" src="spuppy.jpg" style="width:100%">
+   <img class="mySlides" src="naughty.jpg" style="width:100%">
+   <img class="mySlides" src="oulik.jpg" style="width:100%">
+   <img class="mySlides" src="baby.jpg" style="width:100%">
+   <img class="mySlides" src="baby2.jpg" style="width:100%">
+   <img class="mySlides" src="prom.jpg" style="width:100%">
+   <img class="mySlides" src="terror.jpg" style="width:100%">
+   <img class="mySlides" src="smirky.jpg" style="width:100%">
+   <img class="mySlides" src="lazy.jpg" style="width:100%">
+   <img class="mySlides" src="snaughty.jpg" style="width:100%">
+   <img class="mySlides" src="anaughty.jpeg" style="width:100%">
+   <img class="mySlides" src="christmas.jpg" style="width:100%">
+   <img class="mySlides" src="grade7.jpg" style="width:100%">
+   <img class="mySlides" src="newmk.jpg" style="width:100%">
+   <img class="mySlides" src="tired.jpg" style="width:100%">
+
+<a class="w3-btn-floating" style="position:fixed ;top:45%;left:0" onclick="plusDivs(-1)">❮</a>
+<a class="w3-btn-floating" style="position:fixed;top:45%;right:0" onclick="plusDivs(1)">❯</a>
+
+
+</div>
+</div>
+
+<script>
+ var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
+
+  <footer>
+    2016 Amber Mulder &copy
+  </footer>
+<script src="scripts/scripts.js"></script>
+</body>

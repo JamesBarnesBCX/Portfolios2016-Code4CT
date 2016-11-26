@@ -1,0 +1,95 @@
+*{
+  box-sizing: border-box;
+}
+
+header{
+  background-color: #BDC3C7;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-bottom:0;
+  text-align: center;
+}
+
+.heading-style {
+  font family: 'ariel', sans-serif;
+  color:purple
+}
+
+.profile_pic {
+  max-width: 100%;
+}
+
+
+@media only screen and (min-width: 460px) {
+  .content-container{
+    background-color:navy
+
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .content-container{
+    background-color:#CACFD2;
+}
+
+.main-content{
+  padding-top: 5px;
+  background-color:transparent;
+  text-align: center;
+}
+
+.image-container{
+  background-color: transparent;
+  display: inline-block;
+  width: 300px;
+  height: 300px
+}
+
+nav{
+  padding-top: 7%;
+  text-align: center;
+  list-style: none;
+}
+
+.Article-container{
+text-align: center;
+padding-right: 30%;
+padding-left: 30%;
+
+}
+
+.gallery-images{
+  background-color: transparent;
+  display: inline-block;
+  width: 300px;
+  height: 300px
+  padding-top: 7%;
+}
+
+.article-content{
+  overflow: hidden;
+  max-height: 30px;
+
+}
+
+.article-content.expanded{
+max-height: 300px;
+}
+
+footer{
+  list-style: none;
+}
+
+h1{
+  text-align: center;
+}
+
+p{
+  text-align: center;
+}
+.social
+  text-align: center;
+
+}

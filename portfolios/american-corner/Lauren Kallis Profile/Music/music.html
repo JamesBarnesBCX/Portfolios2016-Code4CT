@@ -1,0 +1,386 @@
+<html>
+
+
+<header>
+  <title>Lolly's music</title>
+  <link rel = "stylesheet" href = "normalize.css">
+  <scripts src = "music.js"></scripts>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="description" content="Slide Down Box Menu with jQuery and CSS3" />
+  <meta name="keywords" content="jquery, css3, sliding, box, menu, cube, navigation, portfolio, thumbnails"/>
+  <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"/>
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen"/>
+
+  <style>
+  span.reference{
+    position:fixed;
+    left:10px;
+    bottom:10px;
+    font-size:12px;
+  }
+  span.reference a{
+    color:#aaa;
+    text-transform:uppercase;
+    text-decoration:none;
+    text-shadow:1px 1px 1px #000;
+    margin-right:30px;
+  }
+  span.reference a:hover{
+    color:#ddd;
+  }
+  ul.sdt_menu{
+    margin-top:150px;
+  }
+  h1.title{
+    text-indent:-9000px;
+    background: transparent no-repeat top left;
+    width:633px;
+    height:69px;
+  }
+</style>
+
+<div class="content">
+
+<ul id="sdt_menu" class="sdt_menu">
+  <li>
+    <a href="../profile.html">
+      <img src="tumblr_static_1sio38e7kgbosgok8g8gc0c4o.gif" alt=""/>
+      <span class="sdt_active"></span>
+      <span class="sdt_wrap">
+        <span class="sdt_link">Homepage</span>
+        <span class="sdt_descr">Get to know me</span>
+      </span>
+    </a>
+  </li>
+  <li>
+    <a href="#">
+      <img src="giphy (1).gif" alt=""/>
+      <span class="sdt_active"></span>
+      <span class="sdt_wrap">
+        <span class="sdt_link">Music</span>
+        <span class="sdt_descr">My fav artists</span>
+      </span>
+    </a>
+    <div class="sdt_box">
+        <a href="sidenav/artists.html">Artists</a>
+        <a href="#">Music Videos</a>
+    </div>
+  </li>
+  <li>
+    <a href="#">
+      <img src="maxresdefault (1).jpg" alt=""/>
+      <span class="sdt_active"></span>
+      <span class="sdt_wrap">
+        <span class="sdt_link">Projects</span>
+        <span class="sdt_descr">Things I do for fun</span>
+      </span>
+    </a>
+  </li>
+  <li>
+    <a href="#">
+      <img src="maxresdefault (1).jpg" alt=""/>
+      <span class="sdt_active"></span>
+      <span class="sdt_wrap">
+        <span class="sdt_link">Inspiration</span>
+        <span class="sdt_descr">People I aspire to be</span>
+      </span>
+    </a>
+  </li>
+  <li>
+    <a href="#">
+      <img src="maxresdefault (1).jpg" alt=""/>
+      <span class="sdt_active"></span>
+      <span class="sdt_wrap">
+        <span class="sdt_link">Goals</span>
+        <span class="sdt_descr">Future Ideas</span>
+      </span>
+    </a>
+  </li>
+  <li>
+    <a href="#">
+      <img src="Dark-Desktop-Background-Wallpaper.jpg" alt=""/>
+      <span class="sdt_active"></span>
+      <span class="sdt_wrap">
+        <span class="sdt_link">Gallery</span>
+        <span class="sdt_descr">Me in action</span>
+      </span>
+    </a>
+    <div class="sdt_box">
+      <a href="#">Photograpy</a>
+      <a href="../Gallery/Daily life/daily-life.html">Daily life</a>
+      <a href="#">Drawings</a>
+    </div>
+  </li>
+</ul>
+</div>
+
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+  <script type="text/javascript" src="jquery.easing.1.3.js"></script>
+  <script type="text/javascript">
+      $(function() {
+          $('#sdt_menu > li').bind('mouseenter',function(){
+    var $elem = $(this);
+    $elem.find('img')
+       .stop(true)
+       .animate({
+        'width':'170px',
+        'height':'170px',
+        'left':'0px'
+       },400,'easeOutBack')
+       .andSelf()
+       .find('.sdt_wrap')
+         .stop(true)
+       .animate({'top':'140px'},500,'easeOutBack')
+       .andSelf()
+       .find('.sdt_active')
+         .stop(true)
+       .animate({'height':'170px'},300,function(){
+      var $sub_menu = $elem.find('.sdt_box');
+      if($sub_menu.length){
+        var left = '170px';
+        if($elem.parent().children().length == $elem.index()+1)
+          left = '-170px';
+        $sub_menu.show().animate({'left':left},200);
+      }
+    });
+  }).bind('mouseleave',function(){
+    var $elem = $(this);
+    var $sub_menu = $elem.find('.sdt_box');
+    if($sub_menu.length)
+      $sub_menu.hide().css('left','0px');
+
+    $elem.find('.sdt_active')
+       .stop(true)
+       .animate({'height':'0px'},300)
+       .andSelf().find('img')
+       .stop(true)
+       .animate({
+        'width':'0px',
+        'height':'0px',
+        'left':'85px'},400)
+       .andSelf()
+       .find('.sdt_wrap')
+       .stop(true)
+       .animate({'top':'25px'},500);
+  });
+      });
+  </script>
+
+
+
+</header>
+
+
+<body>
+  <h1>I couldn't possibly list all the songs I've ever loved, but here's some of my favourites.</h1>
+  <h2 id = "intro">Enjoy!</h2>
+
+
+
+
+  <figure id = "ghosttown">
+    <figcaption>
+      <h1>Ghost Town</h1>
+      <h2>You're So Creepy</h2>
+    <img src = "figcaps/tumblr_myag9x0bux1rcln2so1_500.png">
+  </figcaption>
+    <audio controls>
+      <source src = "audio/Ghost Town - You're So Creepy Official Lyric Video!.mp3">
+        <type = "audio/mpeg">
+  </figure>
+
+  <figure id = "linkin-park">
+    <figcaption>
+      <h1>Linkin Park</h1>
+      <h2>Points of Authority</h2>
+    <img src = "figcaps/580px-Linkinpark.png">
+  </figcaption>
+    <audio controls>
+      <source src = "audio/04 Points of Authority.mp3">
+        <type = "audio/mpeg">
+  </figure>
+
+  <figure id = "ptv">
+    <figcaption>
+      <h1>Pierce The Veil</h1>
+      <h2>The New National Anthem</h2>
+    <img src = "figcaps/logo-stacked-red.gif">
+  </figcaption>
+    <audio controls>
+      <source src = "audio/tumblr_m5413iBzql1r01k26o1.mp3">
+        <type = "audio/mpeg">
+  </figure>
+
+  <figure id = "halestorm">
+    <figcaption>
+      <h1>Halestorm</h1>
+      <h2>Mz Hyde</h2>
+    <img src = "figcaps/halestorm_logo_by_mycierobert-d8l97yz.png">
+  </figcaption>
+    <audio controls>
+      <source src = "audio/tumblr_m1xfgeuRwx1r9xye9o1.mp3">
+        <type = "audio/mpeg">
+  </figure>
+
+  <figure id = "breaking-benjamin">
+    <figcaption>
+      <h1>Breaking Benjamin</h1>
+      <h2>Breath</h2>
+    <img src = "figcaps/Breaking_Benjamin_keltic_logo.png">
+  </figcaption>
+    <audio controls>
+      <source src = "audio/tumblr_lrurlp8EPZ1qdixj0o1.mp3">
+        <type = "audio/mpeg">
+  </figure>
+
+  <figure id = "dead-poetic">
+    <figcaption>
+      <h1>Dead Poetic</h1>
+      <h2>Paralytic</h2>
+    <img src = "figcaps/a5df2430faf14b04a5ae4581b8577d96.png">
+  </figcaption>
+    <audio controls>
+      <source src = "audio/tumblr_liughj6Djn1qafovzo1.mp3">
+        <type = "audio/mpeg">
+  </figure>
+
+  <figure id = "blessthefall">
+    <figcaption>
+      <h1>Blessthefall</h1>
+      <h2>See You on the Outside</h2>
+    <img src = "figcaps/tumblr_mocq48FJiO1r6bivto1_1280.png">
+  </figcaption>
+    <audio controls>
+      <source src = "audio/Blessthefall - See You On The Outside.mp3">
+        <type = "audio/mpeg">
+  </figure>
+
+  <figure id = "alesana">
+    <figcaption>
+      <h1>Alesana</h1>
+      <h2>Lullaby of the Crucified</h2>
+    <img src = "figcaps/Alesana.png">
+  </figcaption>
+    <audio controls>
+      <source src = "audio/tumblr_lv5s6314xl1qbkit4o1.mp3">
+        <type = "audio/mpeg">
+  </figure>
+
+  <figure id = "starset">
+    <figcaption>
+      <h1>Starset</h1>
+      <h2>Dark On Me</h2>
+    <img src = "figcaps/d3cbc4bcf6c9dec11e3bd63a078918b1.png">
+  </figcaption>
+    <audio controls>
+      <source src = "audio/Starset - Dark On Me (audio).mp3">
+        <type = "audio/mpeg">
+  </figure>
+
+  <figure id = "ffdp">
+    <figcaption>
+      <h1>Five Finger Death Punch</h1>
+      <h2>Wicked Ways</h2>
+    <img src = "figcaps/FFDPlogo.png">
+  </figcaption>
+    <audio controls>
+      <source src = "audio/09. Wicked Ways.mp3">
+        <type = "audio/mpeg">
+  </figure>
+
+  <figure id = "flyleaf">
+    <figcaption>
+      <h1>Flyleaf</h1>
+      <h2>I'm So Sick</h2>
+    <img src = "figcaps/flyleaf_logo_render_by_lorawow.png">
+  </figcaption>
+    <audio controls>
+      <source src = "audio/Ixapxmx0xSox0xSickx0xXdashxx0xFlyleaf.mp3">
+        <type = "audio/mpeg">
+  </figure>
+
+  <figure id = "virgin-black">
+    <figcaption>
+      <h1>Virgin Black</h1>
+      <h2>Requiem, Kyrie</h2>
+    <img src = "figcaps/114498_logo.gif">
+  </figcaption>
+    <audio controls>
+      <source src = "audio/Virgin_Black___Requiem_Kyrie-2.mp3">
+        <type = "audio/mpeg">
+  </figure>
+
+  <figure id = "tfk">
+    <figcaption>
+      <h1>Thousand Foot Krutch</h1>
+      <h2>War of Change</h2>
+    <img src = "figcaps/TFK-Logo.png">
+  </figcaption>
+    <audio controls>
+      <source src = "audio/tumblr_mg73igDfiQ1r4o4jio1.mp3">
+        <type = "audio/mpeg">
+  </figure>
+
+  <figure id = "in-this-moment">
+    <figcaption>
+      <h1>In This Moment</h1>
+      <h2>The Fighter</h2>
+    <img src = "figcaps/1413829541_0inthis.png">
+  </figcaption>
+    <audio controls>
+      <source src = "audio/In This Moment-The Fighter www.mp3freex.biz.mp3">
+        <type = "audio/mpeg">
+  </figure>
+
+  <figure id = "papa-roach">
+    <figcaption>
+      <h1>Papa Roach</h1>
+      <h2>Getting Away With Murder</h2>
+    <img src = "figcaps/papa_roach_logo_by_saifbeatsart-d848vfr.png">
+  </figcaption>
+    <audio controls>
+      <source src = "audio/Papa Roach - Getting Away With Murder.mp3">
+        <type = "audio/mpeg">
+  </figure>
+
+  <figure id = "escape-the-fate">
+    <figcaption>
+      <h1>Escape the Fate</h1>
+      <h2>Gorgeous Nightmare</h2>
+    <img src = "figcaps/tumblr_mmecy8MnAM1r6bivto2_r1_1280.png">
+  </figcaption>
+    <audio controls>
+      <source src = "audio/tumblr_lp92mblPIs1qmz1mco1.mp3">
+        <type = "audio/mpeg">
+  </figure>
+
+  <figure id = "of-mice-and-men">
+    <figcaption>
+      <h1>Of Mice and Men</h1>
+      <h2>My Understandings</h2>
+    <img src = "figcaps/of_mice_and_men___logo__png__by_lightsinaugust-d5vfva1.png">
+  </figcaption>
+    <audio controls>
+      <source src = "audio/tumblr_lnz506Vdta1qzo143o1.mp3">
+        <type = "audio/mpeg">
+  </figure>
+
+</body>
+
+<footer>
+  <div>
+      <span class="reference">
+          <a href="../profile.html">Homepage</a>
+  <a href="#">Back to top</a>
+      </span>
+</div>
+
+<link rel = "stylesheet" href = "music.css">
+
+</footer>
+
+
+
+
+</html>

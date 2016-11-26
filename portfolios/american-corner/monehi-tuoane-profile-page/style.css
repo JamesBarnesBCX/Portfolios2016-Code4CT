@@ -1,0 +1,129 @@
+html {
+  text-align: center;
+}
+
+body {
+  background-image: url(autumn.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+section{
+  width:50%;
+  margin-left: 25%;
+
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.heading-style {
+  font-family: 'Arial', sans-serif;
+  color: salmon;
+}
+
+#intro {
+  color: ivory;
+}
+
+header {
+  display: inline-block;
+  width: 100%;
+  vertical-align: top;
+  background-image: url(vintage.jpg);
+}
+
+nav ul li {
+  float: left;
+  display: inline-block;
+  width: 20%;
+  vertical-align: top;
+}
+
+nav :hover {
+  background-color: ivory;
+}
+
+.clear-float {
+  display: table;
+  clear: both;
+}
+
+article {
+  float: left;
+
+}
+
+.clear-float {
+  display: table;
+  clear: both;
+}
+
+#footer {
+  color: black;
+}
+
+footer {
+  background-color: lightgray;;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  color: black;
+}
+
+#Interests{
+  padding-bottom: 150px;
+}
+
+a {
+  color: grey;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+aside {
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  float: left;
+}
+
+.content-contain {
+  padding: 5%;
+
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+@ media (min-width:768px)  {
+    .content-contain {
+    margin: 0 auto;
+    width: 70%;
+    max-width: 1000px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+nav ul li a.active{
+  border-bottom: 2px solid #41818b;
+}
+
+.article-content {
+  overflow: hidden;
+  max-height: 300px;
+  transition: max-height 300ms ease-in-out;
+}
+
+.article-content.expended {
+  max-height: 3000px;
+}

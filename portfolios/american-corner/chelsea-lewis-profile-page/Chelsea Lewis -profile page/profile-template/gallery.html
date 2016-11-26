@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>My Profile Page</title>
+  <link rel="stylesheet" href="stylesheets/normalize.css">
+  <link rel="stylesheet" href="stylesheets/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<style>
+.mySlides {display:none}
+.demo {cursor:pointer}
+</style>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <!-- LOGO -->
+    <div class="logo">
+      <h1>Chelsea's Site</h1>
+      <figure>
+        <img src="C:\Users\admin chelsea\Desktop\Chelsea Lewis -profile page\profile-template\images\Dora_Exploradora_(11).png" alt="Logo" id="logo_img" />
+      </figure>
+    </div>
+    <!-- NAVIGATION -->
+    <nav>
+      <ul>
+        <li><a href= "index.html">Home</a></li>
+          <li><a href= "gallery.html">Gallery</a></li>
+        <li><a href= "contact.html">Contact me</a></li>
+      </ul>
+    </nav>
+    <div class="clear-float"></div>
+  </header>
+
+  <!-- MAIN SECTION -->
+  <section>
+    <div class="w3-content" style="max-width:1200px">
+      <img class="mySlides" src="C:\Users\admin chelsea\Desktop\Chelsea Lewis -profile page\profile-template\images\IMG_5220.JPG" style="width:100%">
+      <img class="mySlides" src="C:\Users\admin chelsea\Desktop\Chelsea Lewis -profile page\profile-template\images\13062257_1722454197969556_7203558358107909428_n.jpg" style="width:100%">
+      <img class="mySlides" src="C:\Users\admin chelsea\Desktop\Chelsea Lewis -profile page\profile-template\images\13232964_999436096800507_4473238030253155370_n.jpg" style="width:100%">
+
+      <div class="w3-row-padding w3-section">
+        <div class="w3-col s4">
+          <img class="demo w3-opacity w3-hover-opacity-off" src="C:\Users\admin chelsea\Desktop\Chelsea Lewis -profile page\profile-template\images\IMG_5220.JPG" style="width:100%" onclick="currentDiv(1)">
+        </div>
+        <div class="w3-col s4">
+          <img class="demo w3-opacity w3-hover-opacity-off" src="C:\Users\admin chelsea\Desktop\Chelsea Lewis -profile page\profile-template\images\13062257_1722454197969556_7203558358107909428_n.jpg" style="width:100%" onclick="currentDiv(2)">
+        </div>
+        <div class="w3-col s4">
+          <img class="demo w3-opacity w3-hover-opacity-off" src="C:\Users\admin chelsea\Desktop\Chelsea Lewis -profile page\profile-template\images\13232964_999436096800507_4473238030253155370_n.jpg" style="width:100%" onclick="currentDiv(3)">
+        </div>
+      </div>
+    </div>
+
+    <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+
+    function currentDiv(n) {
+      showDivs(slideIndex = n);
+    }
+
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+         dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+      }
+      x[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " w3-opacity-off";
+    }
+    </script>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Find me elsewhere</p>
+    <ul>
+      <li><a href="https://twitter.com/ChelseaJLew?lang=en">twitter</a></li>
+    </ul>
+  </footer>
+
+</body>
+
+</html>

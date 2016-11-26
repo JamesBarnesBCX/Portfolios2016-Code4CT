@@ -1,0 +1,52 @@
+@font-face {
+  font-family: myFirstFont;
+
+
+}
+h1 {
+    font-family: myFirstfont;
+    font-size: 250%;
+    color:yellow;
+}
+
+h2 {
+
+  font-family: arial;
+    font-size: 200%;
+    color:purple;
+}
+.my button {
+    background-color:black;
+    border: none;
+    color: yellow;
+    margin-left: 200px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline;
+    font-size: 16px;
+}
+
+#profile_pic{
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  /*background-repeat: no-repeat;
+  background-position: center;*/
+  /*background-size: cover;*/
+  rotation:45deg;
+}
+
+li {
+  font-size: 100%;
+  color:red;
+
+}
+body{
+  background-color:pink;
+}
+p{
+  font-size: 75%
+  color:black;
+}

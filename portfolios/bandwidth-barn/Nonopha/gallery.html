@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="UTF-8">
+  <title>Gallery</title>
+  <link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/style.css">
+<style>
+body {
+  background-image: url("img/bg_image.jpg");
+  background-size: cover;
+  color: 	#F0FFFF;
+}
+</style>
+
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="allaboutme.html">All about me</a></li>
+        <li><a href="contacts.html">Contact</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="img/mama.jpg" style="width:80%">
+  <!-- <img class="mySlides" src="img/mom.jpg" style="width:80%"> -->
+  <img class="mySlides" src="img/ne.jpg" style="width:80%">
+  <img class="mySlides" src="img/no.jpg" style="width:80%">
+  <img class="mySlides" src="img/yolz.jpg" style="width:80%">
+  <img class="mySlides" src="img/joki.jpg" style="width:80%">
+  <img class="mySlides" src="img/mypic.jpg" style="width:80%">
+
+  <!-- <img class="mySlides" src="img/pic6.jpg" style="width:80%"> -->
+  <a class="w3-btn-floating w3-display-left" onclick="plusDivs(-1)">back</a>
+  <a class="w3-btn-floating w3-display-right" onclick="plusDivs(1)">next</a>
+</div>
+
+<script>
+// .w3-content w3-display-container {
+//   padding: 12%;
+// }
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+
+</script>
+
+
+
+</body>
+</html>

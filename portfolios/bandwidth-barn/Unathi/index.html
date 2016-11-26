@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Unathi Dywili</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+  .button {
+    display: flex;
+    border-radius: 5px;
+    background-color: green;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 10px;
+    padding: 18px;
+    width: 100tpx;
+    transition: all 0.7s;
+    cursor:  crosshair;;
+    margin: 10px;
+  }
+
+  .button span {
+    cursor:  all-scroll;;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+
+  .button span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+
+  .button:hover span {
+    padding-right: 25px;
+  }
+
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  </style>
+</head>
+<body class="body">
+ <h1 class="Name"> I am Unathi Dywili </h1>
+ <h3> WELCOME TO MY WEB PAGE </h3>
+
+ <img class="image" src="unathi.jpg" alt="Unathi">
+ <button class="button" style= "vertical - align:middle"><span><a href="about.html">about me!</a></span></button>
+   <button class="button" style= "vertical - align:middle"><span><a href="GALLERY.html">Slide shows</a></span></button>
+
+<h3> Wanna know a bit about me? </h3>
+<h2>Name: Unathi</h2>
+<h2> NAME: Unathi </h2>
+<h2> Surname: Dywili </h2>
+<h2> Age: 16 years old </h2>
+<h2> Grade: 10  </h2>
+<h2> School: COSAT </h2>
+<iframe width="300" height="250" src="https://www.youtube.com/embed/KA3k0CzKfUE" frameborder="0" allowfullscreen></iframe>
+</body>

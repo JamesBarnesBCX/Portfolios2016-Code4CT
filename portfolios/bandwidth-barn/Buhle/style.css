@@ -1,0 +1,71 @@
+
+body{
+  background-repeat:no-repeat;
+
+     height: 100%;
+     width: 100%;
+  background-image: url("Vintage-Twitter-Background.jpg");
+  background-repeat: no-repeat;
+}
+
+h1{
+  color: black;
+  font-size:50px;
+  font-family: arial;
+display: block;
+}
+
+.heading-style {
+  font-family: 'Arial', sans-serif, size: "50em";
+  color:lightseagreen;
+  font-size: "50em";
+}
+
+#menu{
+  margin-top: 320px;
+  width: 100%;
+}
+li{
+  float: right;
+  list-style: none;
+  background: #acceee;
+  padding: 20px 50px;
+  margin-left: 20px;
+}
+
+#profile_pic {
+  width:15%;
+  height: 5em;
+  border: 17% black solid;
+  background-color: purple;
+}
+
+a {
+  color: grey;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+
+ul.tab {
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li.tab {
+    float: right;
+}
+
+li.tab a {
+    display: block;
+    color: black;
+
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li.tab a:hover {
+}

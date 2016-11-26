@@ -1,0 +1,56 @@
+.heading-style {
+
+  color: #800080;
+
+}
+h2{
+  color: #800080;
+}
+#borderimg1 {
+    border: 100px solid transparent;
+    padding: 10px;
+    -webkit-border-image: url(border.jpg) 100 round; /* Safari 3.1-5 */
+    -o-border-image: url(border.jpg) 100 round; /* Opera 11-12.1 */
+    border-image: url(border.jpg) 10 round;
+
+}
+
+body {
+  background-image: url("plzwork.jpg");
+}
+
+#profile_pic {
+  width: 40%;
+  height: 30%;
+  border: 1% black solid;
+  /*background-image: url("Faith.jpg");*/
+  padding-left: 0cm;
+  /*background-color: fuchsia;*/
+}
+
+
+
+ .mybutton {
+   background-color: #800080; /* Green */
+       border: none;
+       color: white;
+       padding: 15px 0;
+       width: 300px;
+       text-align: center;
+       text-decoration: none;
+       display: block;
+       font-size: 16px;
+       margin: 10px;
+       border-radius: 40px;
+
+ }
+ .contact{
+   float:right;
+   color: #800080;
+padding-right: 5cm;
+
+ }
+
+p {
+  font-size: 25px;
+}

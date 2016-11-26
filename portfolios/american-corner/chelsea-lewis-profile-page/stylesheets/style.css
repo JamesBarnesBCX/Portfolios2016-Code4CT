@@ -1,0 +1,196 @@
+* {
+box-sizing: border-box;
+}
+
+/*For mobile:*/
+
+body {
+height: 100%;
+font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+font-size: 1em;
+font-weight: 300;
+letter-spacing: 0.05em;
+background: white;
+background-size: cover;
+}
+
+/*These are the styles for
+the header section*/
+header {
+  position: fixed;
+background: #F08080 ;
+opacity: 0.9;
+color: white;
+border-bottom: 2px #999 solid;
+position: none;
+top: 0;
+left: 0;
+right: 0;
+z-index: 1;
+width: 100%;
+height: 20%;
+}
+
+nav {
+list-style-type: none;
+float: none;
+overflow: hidden;
+text-align: left;
+}
+
+nav ul li {
+display: inline-block;
+padding: 0.4em;
+margin: 0 auto;
+}
+
+nav ul li:hover {
+background-color: #FF3B3F;
+}
+
+.logo {
+display: inline-block;
+position: relative;
+top: 0;
+}
+
+header div h1 {
+font-size: 1.3em;
+padding-left: 25%
+}
+
+#logo_img {
+max-width: 50%;
+position: absolute;
+top: 5%;
+left: 70%;
+padding-left: 28%;
+}
+
+.clear-float {
+display: table;
+clear: both;
+}
+
+.container {
+width: 100%;
+margin: 0 auto;
+padding: 30%  7% 40%;
+}
+
+/*These are the styles for
+all headings in main section*/
+.heading-style {
+font-family: 'Arial', sans-serif;
+color: #FF3B3F;
+display: block;
+text-align: center;
+}
+
+/* Remember to style by class here*/
+section figure img {
+max-width: 100%;
+border-radius: 10%;
+}
+
+section figcaption {
+text-align: center;
+}
+
+.paragraphContainer{
+overflow: hidden;
+max-height: 200px;
+transition transition-timing-function: linear;
+transition-duration: 3s;
+}
+
+.paragraphContainer.expanded{
+max-height: 3000px;
+}
+
+#paragraphContent{
+}
+
+
+
+/* Styling for footer element*/
+footer {
+background: #3A3A3C;
+
+/*position: fixed;
+bottom: 0;
+left: 0;
+width: 100%;
+height: 10%;
+padding-bottom: 28%;*/
+color: white;
+text-align: center;
+}
+
+/*  Create a fluid website for both desktop and tablet*/
+@media only screen and (min-width: 768px) {
+/*For desktop:*/
+header {
+  padding: 0 1em;
+  left: 0;
+  width: 100%;
+  height: 10%;
+}
+header div h1 {
+  font-size: 1.3em;
+  padding-left: 1%
+}
+#logo_img {
+  width: 55%;
+  position: absolute;
+  top: 5%;
+  left: 80%;
+}
+nav {
+  float: right;
+}
+
+/* your active style goes here*/
+nav ul li a.active{
+  border-bottom: 3px solid #83F52C;
+font-style: italic;
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 8%  7% 10%;
+}
+.figurecap {
+  max-width: 50%;
+  border-radius: 10%;
+  float: left;
+  text-align: center;
+}
+article {
+  padding-left: 10%;
+}
+
+
+footer {
+  height: 10%;
+  padding-top: 1%;
+  padding-bottom: 4%;
+}
+}
+
+@media only screen and (min-width: 600px) {
+/*For Tablet:*/
+nav {
+  float: right;
+}
+.container {
+padding: 8%  7% 40%;
+}
+footer {
+  height: 10%;
+  padding-top: 1%;
+  padding-bottom: 3%;
+}
+
+}

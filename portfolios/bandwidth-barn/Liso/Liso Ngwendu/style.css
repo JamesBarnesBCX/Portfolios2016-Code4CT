@@ -1,0 +1,139 @@
+body{
+    font-family: "proxima nova light", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+}
+
+li {
+  display: inline;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  font-family: "proxima nova light", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+  font-size: 24px;
+}
+
+ul.topnav li {float: right;}
+
+ul.topnav li a {
+  display: block;
+  color: #FFF;
+  line-height: 2.8em;
+  text-decoration: none;
+  text-align: center;
+  padding: 30px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+/* This is the code for the logo */
+.logo {
+  height: 62px;
+  width: 40px;
+  background: url("logo.png") 0px -63px no-repeat;
+  display: block;
+  text-indent: -9999px;
+  float: left;
+}
+
+.logo:hover {
+  opacity: 0.5;
+}
+a {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #333333;
+}
+
+a:hover,
+a:active {
+  color: red;
+}
+ul.topnav li a:active {
+  background: #333;
+}
+
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+/* Styling for the responsive site */
+
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+
+.social a,
+.logo,
+.contact a {
+  -webkit-transition: opacity .3s;
+  -moz-transition: opacity .3s;
+  -o-transition: opacity .3s;
+  transition: opacity .3s;
+}
+
+@media only screen and (min-width: 1024px) {
+  header nav {
+    font-size: 18px;
+    font-size: 1.8rem;
+    margin-right: 10%;
+  }
+  .social {
+    display: block;
+    float: right;
+    list-style: none;
+    margin: 30px 0 0 0;
+  }
+  .social li {
+    display: inline-block;
+  }
+  .social li a {
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    background: url(images/sprite.png) 0 0 no-repeat;
+    text-indent: -9999px;
+    cursor: pointer;
+    margin-left: 15px;
+  }
+  .social li a:hover {
+    opacity: 0.5;
+  }
+  .social .facebook a {
+    background-position: 0px -186px;
+  }
+  .social .twitter a {
+    background-position: -32px -186px;
+  }
+  .social .dribbble a {
+    background-position: -64px -186px;
+  }
+  .social .linkedin a {
+    background-position: -96px -186px;
+  }
+  }

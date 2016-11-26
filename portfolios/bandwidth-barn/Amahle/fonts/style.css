@@ -1,0 +1,17 @@
+.heading-style {
+  font-family: 'Arial', sans-serif;
+  color: purple;
+}
+
+#profile_pic {
+  width: 100px;
+  height: 100px;
+  border: 1px black solid;
+  background-color: grey;
+}
+
+a {
+  color: grey;
+  line-height: 1.2;
+  text-decoration: none;
+}

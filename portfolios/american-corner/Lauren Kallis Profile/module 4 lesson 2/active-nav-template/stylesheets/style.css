@@ -1,0 +1,56 @@
+body {
+  background-color: #efefef;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #5DADE2;
+}
+
+h2 {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  padding: 0 2%;
+  background-color: #fff;
+}
+
+.logo-container {
+  display: inline-block;
+  width: 49%;
+  text-align: left;
+}
+
+nav {
+  display: inline-block;
+  width: 50%;
+}
+
+nav ul li {
+  display: inline-block;
+  width: 25%;
+  list-style: none;
+
+}
+
+nav ul li a {
+  display: inline-block;
+  padding: 2%;
+  color: #5DADE2;
+}
+
+nav ul li a.active {
+  border-bottom: 2px solid #92ACB7;
+}
+/* your active style goes here*/
+
+/* your active style goes here*/
+
+.mobile-container {
+  max-width: 350px;
+  margin: 0 auto;
+}

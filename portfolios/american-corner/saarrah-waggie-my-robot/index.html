@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My Robot</title>
+    <link rel="stylesheet" href="stylesheets/normalize.css" charset="utf-8">
+    <link rel="stylesheet" href="stylesheets/style.css" charset="utf-8">
+    <link rel="stylesheet" href="stylesheets/custom.css" charset="utf-8">
+  </head>
+
+  <body>
+    <header>
+      <h1>My Robot</h1>
+      <div id="caption"></div>
+
+
+
+}
+    </header>
+
+    <main>
+      <!-- ROBOT PLAYGROUND -->
+      <div class="playground-container">
+        <div id="playground">
+          <div id="robot"></div>
+
+          <div id="moveBtnSet" class="direction-btn-group">
+            <button onclick ="robot.move('up')" > Up </button>
+            <button onclick ="robot.move('left')" > Left</button>
+            <button onclick ="robot.move('right')" > Right </button>
+            <button onclick ="robot.move('down')" > Down</button>
+             <!-- Create 4 buttons using the <button> element for the directions 'Up', 'Left', 'Right' and 'Down'. -->
+             <!-- onclick of each button call the function 'move' of the 'robot' object -->
+             <!-- The function robot.move() accepts the direction in which the robot should move -->
+             <!-- So you must provide the direction as an argument to be passed into the function -->
+          </div>
+        </div>
+      </div>
+
+      <!-- ROBOT CONTROL PANEL -->
+      <div id="actions" class="control-panel">
+        <div id="speakControl" class="control-group">
+          <h3>Speak, Robot!</h3>
+          <label>Make your robot repeat a phrase or ask it the time</label>
+          <div class="button-group">
+            <button onclick="robot.speak()">Say something</button>
+            <button onclick="robot.time()">Time please?</button>
+          </div>
+        </div>
+
+        <div id="inventoryControl" class="control-group">
+          <h3>My Inventory</h3>
+
+          <!-- These buttons use the value of the input field to search, remove and add items to the inventory-->
+          <label  for="userItemSearch">Enter the name of the item you want to check</label>
+          <div class="search-container">
+            <input type = "text" name ="search" placeholder="Search.." id ="userItemSearch">
+            <button onclick = "robot.findItem()">Search</button>
+            <!-- Create an input of type text with the id of "userItemSearch"-->
+            <!-- Create a button with the value "Search" that calls findItem() when the button is clicked -->
+          </div>
+
+          <label>Add or remove items from inventory</label>
+          <!-- Create an input of type text with the id of "userItemInput"-->
+          <input id = "userItemInput" type = "text">
+          <div class="button-group margin-top">
+            <button onclick = "robot.addItem()"> Add item</button>
+              <button onclick = "robot.removeItem()"> Remove item</button>
+            <!-- Create a button with the value "Add Item" that calls addItem() when the button is clicked -->
+            <!-- Create a button with the value "Remove Item" that calls removeItem() when the button is clicked -->
+          </div>
+
+          <label>Show me my entire inventory!</label>
+          <button onclick ="robot.listItems()"> Display Inventory </button>
+          <!-- Create a button with the value "Display Inventory" that calls listItems() when the button is clicked -->
+        </div>
+
+        <div id="customControl" class="control-group">
+          <h3>Customise Robot</h3>
+
+          <!-- Rename your robot -->
+          <label for="userNameInput">Type a new name for your robot below</label>
+          <input id="userNameInput" type="text">
+          <button class="margin-top" onclick ="robot.rename()">Rename Robot</button>
+
+          <!-- Change the colour of your robot -->
+          <label>Choose a new colour to paint your robot</label>
+          <div id="colorPallete"></div>
+        </div>
+        <label>Click to go to game:</label>
+        <div class="button-group game">
+          <button onclick = "window.location.href='game.html'">Game</button>
+          <!-- Create a button with the value "Add Item" that calls addItem() when the button is clicked -->
+          <!-- Create a button with the value "Remove Item" that calls removeItem() when the button is clicked -->
+        </div>
+      </div>
+
+    </main>
+
+    <script src="scripts/robot.js" type="text/javascript"></script>
+    <script src="scripts/script.js" type="text/javascript"></script>
+
+  </body>
+</html>

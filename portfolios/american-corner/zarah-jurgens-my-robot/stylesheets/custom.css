@@ -1,0 +1,44 @@
+/* CHANGE THESE STYLES TO FURTHER CUSTOMIZE THE DEFAULT APPEARANCE OF YOUR ROBOT*/
+#robot {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 40px;
+  width: 40px;
+  height: 60px;
+  background-color: #ff8062;
+  border: solid 2px black;
+}
+/* CHANGE THESE STYLES TO FURTHER CUSTOMIZE THE DEFAULT APPEARANCE OF YOUR ROBOT*/
+.listItems button{
+  padding-top: 2em;
+}
+
+
+table{
+  height:400px;
+  width:400px;
+  margin:100px auto;
+  background: #4294E5;
+}
+
+table tr td{
+  border: 2px solid black;
+  margin: 100px auto;
+  width: 100px;
+  height: 100px;
+  font-size: 50px;
+  font-style: normal;
+  text-align: center;
+
+}
+
+td:hover{
+  background-color: #7CE2EC
+}
+
+h2 {
+  text-align: center;
+  font-style: Serif;
+  font-size: 30px;
+}

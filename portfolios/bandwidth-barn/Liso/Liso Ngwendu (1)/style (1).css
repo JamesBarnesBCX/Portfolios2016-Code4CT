@@ -1,0 +1,142 @@
+body{
+    font-family: "proxima nova light", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+}
+
+li {
+  float:left;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  font-family: "proxima nova light", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+  font-size: 64px;
+}
+
+ul.topnav li {float: center;}
+
+ul.topnav li a {
+  display: block;
+  color: #FFF;
+  text-decoration: none;
+  padding: 30px 16px;
+  font-size: 36px;
+}
+/* This is the code for the logo */
+.logo {
+  height: 185px;
+  width: 185px;
+  float: left;
+}
+
+.logo:hover {
+  opacity: 0.5;
+}
+a {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #333333;
+}
+
+a:hover,
+a:active {
+  color: red;
+}
+ul.topnav li a:active {
+  background: #333;
+}
+
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+/* Styling for the responsive site */
+
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+
+.social a,
+.logo,
+.contact a {
+  -webkit-transition: opacity .3s;
+  -moz-transition: opacity .3s;
+  -o-transition: opacity .3s;
+  transition: opacity .3s;
+}
+
+
+@media only screen and (min-width: 1024px) {
+  header nav {
+    font-size: 18px;
+    font-size: 1.8rem;
+    margin-right: 10%;
+  }
+  .social {
+    display: block;
+    float: right;
+    list-style: none;
+    margin: 30px 0 0 0;
+  }
+  .social li {
+    display: inline-block;
+  }
+  .social li a {
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    background: url("sprite.png") 0 0 no-repeat;
+    text-indent: -9999px;
+    cursor: pointer;
+    margin-left: 15px;
+  }
+  .social li a:hover {
+    opacity: 0.5;
+  }
+  .social .facebook a {
+    background-position: 0px -186px;
+  }
+  .social .twitter a {
+    background-position: -32px -186px;
+  }
+  .social .dribbble a {
+    background-position: -64px -186px;
+  }
+  .social .linkedin a {
+    background-position: -96px -186px;
+  }
+  }
+  @media only screen and (min-width: 668px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-width: 668px) and (min--moz-device-pixel-ratio: 1.5), only screen and (min-width: 668px) and (min-device-pixel-ratio: 1.5) {
+    .logo,
+    .social li a {
+      background-image: url(images/sprite@2x.png);
+      background-size: 150px 1200px;
+    }
+  }
+ul.topnav .logo_li {float: left;}

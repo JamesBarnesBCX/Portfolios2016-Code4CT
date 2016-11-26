@@ -1,0 +1,30 @@
+<section>
+
+  <article>
+    <h2 class="heading-style">Who am i and what are my values in life?</h2>
+
+    <p>I'm a sixteen yeras old girl doing my high school studies at COSAT high school.Just like every girl i have ambitions and goals but i was very lucky to get a chance to attend Code4CT project and be part of it.My ambitions are to be a rich lady with degrees of being a doctor and a lawyer,I want to travel the world.Code4CT is great platform for me to learn about coding and it basically opens up  doors for me to travel the world .With this type of skill i can do a lot of things that can help people who are suffering and i can make a great change.I learnt so many skills at code camp and being around so many different peopl helped me in boosting my confidence and being used to talking in public ,voicing out my thoughts about any matter at hand.</p>
+
+
+  </article>
+
+  <aside>
+    <h2 class="heading-style">My Code Camp App</h2>
+    <a>It was a amazing experience and being involed in creating life changing apps for businesses and companies.Always knowing how to create solutions for any particular problem using your coding skills.managing to build up a good reputation for your self and making sure that you are always on the good side and you are awlays on track and in control.Presenting the hard work we put in was the best experience ever because now you get to stand infront and be proude of the efforts you have put in.</a>
+    <h2 class="heading-style">My Interests</h2>
+
+
+  </aside>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>Find me on the interwebs</p>
+  <ul>
+    <li><a href="#">Email Address-Nonny2402@gamil.com</a></li>
+
+    </address>
+    <li><a href="#">Facebook-Nonopha Mamba</a></li>
+    <li><a href="#">Instagram-@Nonny Nolz_2402</a></li>
+  </ul>
+</footer>

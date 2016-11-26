@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Profile Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+
+  <div id="centeredmenu">
+     <ul >
+        <li><a href="profile-page.html">Home</a></li>
+        <li><a href="about.html" >About me</a></li>
+        <li><a href="pictures.html">Pictures</a></li>
+     </ul>
+  </div>
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+  <div class="name"><h1>Lumka Britney Ntsadu</h1></div>
+  <img class= "ss" src="images/cover.jpg" >
+  <header>
+
+    <figure>
+      <center><img src="images/lumka.jpg" alt="lumka.jpg"  align ="middle" id="profile_pic" class="pro"></img>
+    </figure>
+  </header>
+
+  <!-- MAIN SECTION -->
+  <center>
+  <section>
+    <article>
+
+    <aside>
+
+      <h3 class="heading-style">My Interests</h3>
+
+      <ol>
+        <li>Coding</li>
+        <li>Reading</li>
+        <li>Listening to music</li>
+        <li>comedy</li>
+      </ol>
+    </aside>
+
+  </section>
+<a id="button" type="button" href="contact.html">Contacts</a>
+  <!-- FOOTER -->
+  <footer>
+
+  </footer></center>
+</body>
+</html>

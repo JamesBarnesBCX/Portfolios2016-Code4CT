@@ -1,0 +1,127 @@
+.heading-style {
+  font-size: 2.5em;
+  font-family: 'Arial', monospace;
+  color:black;
+}
+
+
+
+
+
+body {
+background-color: #25354f;
+background-repeat: no-repeat;
+}
+
+h1{
+   text-align: center;
+   font-size: 1.87em
+
+}
+ol,ul{
+  font-size: 1.775em;
+  max-width: 300px;
+  text-align: left;
+  color: white;
+}
+p{
+  font-size: 120%;
+  font-family: Arial
+  color:white;
+}
+
+
+#centeredmenu {
+   float:left;
+   width:100%;
+   background:#25354f;
+   border-bottom:4px solid #000000;
+   overflow:hidden;
+   position:relative;
+}
+#centeredmenu ul {
+   clear:left;
+   float:left;
+   list-style:none;
+   margin:0;
+   padding:0;
+   position:relative;
+   left:50%;
+   text-align:center;
+}
+#centeredmenu ul li {
+   display:block;
+   float:left;
+   list-style:none;
+   margin:0;
+   padding:0;
+   position:legal;
+   right:50%;
+}
+#centeredmenu ul li a {
+   display:block;
+   margin:0 0 0 1px;
+   padding:3px 10px;
+   color:#5b0918;
+   text-decoration:none;
+   line-height:1.3em;
+}
+#centeredmenu ul li a:hover {
+   background:#369;
+   color:#fff;
+}
+#centeredmenu ul li a.active,
+#centeredmenu ul li a.active:hover {
+   color:#5b0918;
+   background:#000;
+   font-weight:bold;
+}
+
+/* Background  */
+div.lines {
+    border: 0.0625em solid black;
+    background-color: lightblue;
+    padding: 5em 5em 5em 5em;
+
+    /*background-image:url("brit.jpg");*/
+     background-size: 100% 100% 100% 100%;
+}
+div.name {
+  background-color: lightblue;
+padding:2em 10em;
+color:black;
+text-align: center;
+}
+img.ss {
+  width: 100%;
+  max-height: auto;
+}
+img.pro {
+    border-radius: 50%;
+        margin-top: -6.25em;
+}
+#button {
+    background-color: #5b0918;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    margin: 0.25em 0.125em;
+    cursor: pointer;
+}
+
+button {
+    background-color: #5b0918;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    margin: 0.25em 0.125em;
+    cursor: pointer;
+}

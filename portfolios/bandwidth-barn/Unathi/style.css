@@ -1,0 +1,40 @@
+body {
+    background-image: url("ko.jpg");
+}
+
+
+h1{
+  color: purple;
+  text-align: center;
+  text-transform: capitalize;
+}
+h2{
+  color: grey;
+  text-align: left;;
+}
+h3{
+  color :black ;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.mySlides{
+  background-color:
+  width: 30%;
+  padding-left: 20em
+}
+.Name{
+font-size: 50%;
+}
+.image{
+  height: 200px;
+  width: 200px;
+  display: block;
+  margin: auto;
+  border-radius: 60px;
+}
+.botton{
+  .button {
+      float: left;
+      border: 1px solid green
+}

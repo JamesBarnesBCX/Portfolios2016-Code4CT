@@ -1,0 +1,11 @@
+.heading-style{
+  font-family: Roman;
+  color: pink;
+}
+
+#profile_pic{
+width: 100px;
+height: 100px;
+border: 2px yellow solid;
+background-color: orange;
+}

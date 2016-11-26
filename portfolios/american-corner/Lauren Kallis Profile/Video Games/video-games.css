@@ -1,0 +1,62 @@
+.crossfade > figure {
+  animation: imageAnimation 30s linear infinite 0s;
+  backface-visibility: hidden;
+  background-size: cover;
+  background-position: center center;
+  color: transparent;
+  height: 100%;
+  left: 0%;
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: 0;
+}
+
+.crossfade > figure:nth-child(1) { background-image: url("VG-Pics/687138.jpg"); }
+
+.crossfade > figure:nth-child(2) {
+  animation-delay: 6s;
+  background-image: url("VG-Pics/67809911-thief-game-background-wallpapers.jpg");
+}
+
+.crossfade > figure:nth-child(3) {
+  animation-delay: 12s;
+  background-image: url("VG-Pics/Dishonored-video-games-32521317-1920-1200.jpg");
+}
+
+.crossfade > figure:nth-child(4) {
+  animation-delay: 18s;
+  background-image: url("VG-Pics/hd-game-wallpapers-1080p-widescreen-jpg");
+}
+
+.crossfade > figure:nth-child(5) {
+  animation-delay: 24s;
+  background-image: url("VG-Pics/kf8x2N4.jpg");
+}
+
+
+@@keyframes
+  imageAnimation {  0%  {
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  8% {
+  animation-timing-function: ease-out;
+  opacity: 1;
+}
+  17% {
+    opacity: 1;
+  }
+  21 {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+  }
+
+#wrapper {
+  width: 400px;
+  height: auto;
+}

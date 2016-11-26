@@ -1,0 +1,66 @@
+/* CHANGE THESE STYLES TO FURTHER CUSTOMIZE THE DEFAULT APPEARANCE OF YOUR ROBOT*/
+#robot {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 40px;
+  width: 40px;
+  height: 60px;
+  background-color: blue;
+  border: solid 2px black;
+}
+
+table {
+  height:auto;
+  width:inherit;
+  color: purple;
+
+}
+table , tr ,td {
+  border:1px solid black;
+  border-collapse: collapse;
+  border-color: purple;
+  background-color: purple;
+
+}
+
+body{
+  background: grey;
+}
+
+#gameBoard {
+  margin: 100px auto;
+  height: 400px;
+  width: 400px;
+  background: #efefef;
+
+}
+
+#gameTable {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  /*border-collapse:collapse;*/
+}
+
+tr{
+  margin: none;
+  padding: none;
+}
+
+td{
+  width: 100px;
+  height: 100px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+  background: #fafafa;
+  text-align: center;
+}
+
+td:hover{
+  background-color: #ef006b;
+}
+
+#backbutton{
+  width: 190px;
+}
+/* CHANGE THESE STYLES TO FURTHER CUSTOMIZE THE DEFAULT APPEARANCE OF YOUR ROBOT*/

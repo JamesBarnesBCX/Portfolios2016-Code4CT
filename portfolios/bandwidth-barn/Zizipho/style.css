@@ -1,0 +1,88 @@
+
+body{
+  background: #eaecee;
+}
+.heading-style {
+  font-family:"Ariel Black",Gadget,sans-serif;
+  color: black;
+
+}
+h1{
+  font-size: 60px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);;
+}
+#profile_pic {
+  width: 85%;
+  height: 85%;
+  border: 1% black solid;
+
+  background-color: aqua;
+}
+#borderimg1 {webkit-border-image:url(border.png) 30 round;
+  /*Safari 3.1-5*/-0-border-image:url(border.png) 30 round;/*Opera 11-12*/border
+  -image:url(border.png) 30 round;
+}
+a {
+  color: Orange;
+  line-height: 1.2;
+  text-decoration: bold;
+}
+.button {
+    background-color: #9C27B0; /* Green */
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.button:hover{
+    box-shadow: none;
+}
+.profile {
+  width: 30%;
+  border-radius: 50%;
+  float:left;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.menu, p{
+  display: block;
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  color: white;
+}
+/* The alert message box */
+.alert {
+    padding: 20px;
+    background-color: #f44336; /* Red */
+    color: white;
+    margin-bottom: 15px;
+}
+
+/* The close button */
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+    color: black;
+}
+
+.viewer{
+  width: 60%;
+  height: auto;
+  padding-left: 100px;
+}

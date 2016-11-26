@@ -1,0 +1,59 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(sansation_light.woff);
+}
+h1 {
+    font-size: 250%;
+}
+
+h2 {
+    font-size: 200%;
+}
+body {
+    background-color:pink;
+    border: none;
+    color: green;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+#profile_pic{
+  width:25%;
+  height:50%;
+  border:1% black solid;
+  background-color: aqua;
+}
+.button {
+    background-color: hsla(360, 100%, 100%, 0.5);  /* green with opacity */
+    border: 1px solid green;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin:4px 2px;
+    cursor: pointer;
+    float: left;
+}
+
+.button:hover {
+    background-color: #3e8e41;
+}
+</style>
+</head>
+<body>
+
+<h2>Bordered Button Group</h2>
+<p>Add borders to create a bordered button group:</p>
+
+<button class="button">Button</button>
+<button class="button">Button</button>
+<button class="button">Button</button>
+<button class="button">Button</button>
+
+<p style="clear:both"><br>Remember to clear floats after, or else will this p element also float next to the buttons.</p>
+</body>
+</html>

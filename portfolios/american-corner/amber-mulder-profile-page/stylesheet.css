@@ -1,0 +1,151 @@
+body {
+  background-color:lightblue;
+  text-align: center;
+  color: grey;
+}
+*{
+  box-sizing: border-box;
+}
+header{
+  font-size:30px;
+  text-align: center;
+   font-family: cursive;
+}
+h4{
+  font-size: 30px;
+  font-family: cursive;
+}
+
+.column{
+  font-size: 18px;
+  display: inline-block;
+  width: 40%;
+  text-align: left;
+}
+h3{
+  font-size: 30px;
+}
+#meeee{
+  text-align: center;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: lightblue;
+}
+
+
+.navv a{
+    display: block;
+    color: grey;
+    text-decoration: none;
+    padding: 2em 2em 2em 2em;
+    float: left;
+    top:0;
+    width: 11%;
+    height: 15%;
+}
+
+li a:hover {
+    background-color: beige;
+}
+footer{
+  color: grey;
+  width: 100%;
+  height: 20px;
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+}
+
+.slides img{
+  width: 100%;
+  height:40% ;
+  margin: 10px 10px 10px 10px ;
+  padding: 20px 20px 20px 20px ;
+}
+
+.clear-float{
+  display: table;
+  clear: both;
+
+}
+.biointro{
+padding: 2em 2em 2em 2em;
+float: left;
+}
+@media only screen and (max-width: 600px){
+.column{
+  display: block;
+  width: 100%;
+  padding: 2em;
+}
+.heading{
+  font-size: 20px;
+  font-family: cursive;
+}
+.navv a{
+    display: block;
+    color: grey;
+    text-decoration: none;
+    padding: 2em 2em 2em 2em;
+    float: left;
+    top:0;
+    width: 16%;
+    height: 15%;
+}
+
+}
+@media only screen and (min-width: 1000px){
+
+}
+.articles{
+  background-color: white;
+  margin: 1em 1em 1em 1em;
+  padding: 0 3em 3em 3em;
+  margin: solid;
+  box-shadow: 1em 2em 3em 1em;
+}
+
+.animals{
+  color: black;
+  text-align:left;
+}
+.animals h1{
+  text-align: center;
+  color: red;
+  font-family: "algarian";
+}
+.exams{
+  background-color: white;
+  margin: 1em 1em 1em 1em;
+  padding: 0 3em 3em 3em;
+  margin: solid;
+  box-shadow: 1em 2em 3em;
+}
+.exams h1{
+  text-align: center;
+  color: red;
+  font-family: "algarian";
+}
+.exams p{
+  color: black;
+  text-align:left;
+}
+.artsblogs{
+  left:0;
+  text-decoration: none;
+  color: black;
+  padding: 1em 1em 3em 1em;
+}
+.active {
+background-color: pink;
+
+}
+.top{
+  width: 100%;
+  height: 5em;
+  background-color: pink;
+}
