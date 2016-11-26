@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Slabo+13px|Stint+Ultra+Expanded|Ultra" rel="stylesheet">
     <link async href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="js/vendor/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="js/vendor/slick/slick-theme.css" />
     <link rel="stylesheet" href="css/main.css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
@@ -28,7 +30,14 @@
     <div class="content-container">
         <div class="main-box">
             <h1>Code4CT Projects 2016</h1>
-            <img src="img/class.jpg" alt="" />
+
+            <div class="slider">
+                <div class="slider-item"><img src="img/camp.jpg" alt="" /></div>
+                <div class="slider-item"><img src="img/class.jpg" alt="" /></div>
+                <div class="slider-item"><img src="img/teach.jpg" alt="" /></div>
+                <div class="slider-item"><img src="img/ac.jpg" alt="" /></div>
+            </div>
+
             <br>
 
             <input id="tab1" type="radio" name="tabs" checked>
@@ -81,6 +90,7 @@
                 <a class="btn" href="portfolios/makapula/janine/index.html" target="_blank">Janine</a>
                 <a class="btn" href="portfolios/makapula/lindeka/index.html" target="_blank">Lindeka</a>
                 <a class="btn" href="portfolios/makapula/milisa/index.html" target="_blank">Milisa</a>
+                <a class="btn" href="portfolios/makapula/raylene/Home.html" target="_blank">Raylene</a>
                 <a class="btn" href="portfolios/makapula/robin/index.html" target="_blank">Robin</a>
                 <a class="btn" href="portfolios/makapula/sange/index.html" target="_blank">Sange</a>
                 <a class="btn" href="portfolios/makapula/sonique/index.html" target="_blank">Sonique C</a>
@@ -91,6 +101,29 @@
 
             <section id="content3" style="text-align: center">
                 <h3 class="mobi-title">American Corner</h3>
+
+                <a class="btn" href="portfolios/american-corner/alison/gameAlly.html" target="_blank">Alison</a>
+                <a class="btn" href="portfolios/american-corner/amber/index.html" target="_blank">Amber</a>
+                <a class="btn" href="portfolios/american-corner/amy/gameAlly.html" target="_blank">Amy</a>
+                <a class="btn" href="portfolios/american-corner/charney/index.html" target="_blank">Charney</a>
+                <a class="btn" href="portfolios/american-corner/chelsea-e/index.html" target="_blank">Chelsea E</a>
+                <a class="btn" href="portfolios/american-corner/chelsea-l/use%20this-%20chelsea%20final/profile-template/index.html" target="_blank">Chelsea L</a>
+                <a class="btn" href="portfolios/american-corner/fatimah/index.html" target="_blank">Fatimah</a>
+                <a class="btn" href="portfolios/american-corner/jade/gameJade.html" target="_blank">Jade</a>
+                <a class="btn" href="portfolios/american-corner/jamie/index.html" target="_blank">Jamie</a>
+                <a class="btn" href="portfolios/american-corner/jody/html/index.html" target="_blank">Jody</a>
+                <a class="btn" href="portfolios/american-corner/lauren/profile.html" target="_blank">Lauren</a>
+                <a class="btn" href="portfolios/american-corner/monehi/index.html" target="_blank">Monehi</a>
+                <a class="btn" href="portfolios/american-corner/naledi/index.html" target="_blank">Naledi</a>
+                <a class="btn" href="portfolios/american-corner/rebecca/index.html" target="_blank">Rebecca</a>
+                <a class="btn" href="portfolios/american-corner/saarrah/index.html" target="_blank">Saarrah</a>
+                <a class="btn" href="portfolios/american-corner/tina/profile-page.html" target="_blank">Tina</a>
+                <a class="btn" href="portfolios/american-corner/yusraa/index.html" target="_blank">Yusraa</a>
+                <a class="btn" href="portfolios/american-corner/zarah/index.html" target="_blank">Zarah</a>
+
+
+
+
             </section>
 
             <section id="content4">
@@ -122,6 +155,7 @@
     <script>
         window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')
     </script>
+    <script type="text/javascript" src="js/vendor/slick/slick.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/particles.js"></script>
     <script src="js/main.js"></script>
@@ -142,6 +176,19 @@
         }(window, document, 'script', 'ga'));
         ga('create', 'UA-XXXXX-X', 'auto');
         ga('send', 'pageview');
+
+        $(document).ready(function() {
+            $('.slider').slick({
+                dots: true,
+                infinite: true,
+                speed: 500,
+                fade: true,
+                cssEase: 'linear',
+                adaptiveHeight: true,
+                autoplay: true,
+                autoplaySpeed: 4000,
+            });
+        });
     </script>
 </body>
 
